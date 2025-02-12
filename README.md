@@ -1,5 +1,5 @@
 ```mermaid
-stateDiagram-v2
+stateDiagram-v2: TB
         state IHT_Session {
                 IHT_Setup
                 IHT_Running

@@ -1,3 +1,4 @@
+```mermaid
 stateDiagram-v2
         state IHT_Session {
                 IHT_Setup

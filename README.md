@@ -19,5 +19,4 @@ stateDiagram-v2
         NormoxicInterval --> HypoxicInterval : IntervalCompleted
         NormoxicInterval --> Idle : AllCyclesCompleted
         IHT_Paused --> IHT_Running : Resume
-        IHT_Completed --> Idle : Complete
 [*] --> Idle

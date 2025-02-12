@@ -4,7 +4,6 @@ stateDiagram-v2
                 IHT_Setup
                 IHT_Running
                 IHT_Paused
-                IHT_Completed
         }
         state IHT_Running {
                 HypoxicInterval
@@ -18,7 +17,7 @@ stateDiagram-v2
         HypoxicInterval --> NormoxicInterval : IntervalCompleted
         HypoxicInterval --> IHT_Paused : BiofeedbackAlert
         NormoxicInterval --> HypoxicInterval : IntervalCompleted
-        NormoxicInterval --> IHT_Completed : AllCyclesCompleted
+        NormoxicInterval --> Idle : AllCyclesCompleted
         IHT_Paused --> IHT_Running : Resume
         IHT_Completed --> Idle : Complete
 [*] --> Idle
